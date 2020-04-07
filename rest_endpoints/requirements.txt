@@ -1,0 +1,7 @@
+Flask==1.1.1
+requests==2.22.0
+ndjson==0.3.1
+flask_restplus==0.13.0
+Werkzeug==0.16.1
+gunicorn==20.0.4
+google-cloud-storage==1.26.0

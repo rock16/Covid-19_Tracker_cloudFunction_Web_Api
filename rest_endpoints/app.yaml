@@ -1,0 +1,14 @@
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  python_version: 3.7
+
+# [START configuration]
+endpoints_api_service:
+  # The following values are to be replaced by information from the output of
+  # 'gcloud endpoints services deploy openapi.yaml' command.
+  name: outbreak-visualizer.appspot.com
+  rollout_strategy: managed
+  # [END configuration]

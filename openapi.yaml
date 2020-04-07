@@ -1,0 +1,19 @@
+# [START swagger]
+swagger: "2.0"
+info:
+  description: "A simple API Endpoints that returns outbreak datas."
+  title: "Outbreak data"
+  version: "1.0.0"
+host: "outbreak-visualizer.appspot.com"
+# [END swagger]
+
+paths:
+  "/v1/covid-19-json":
+    get:
+      description: "Returns covid-19 outbreak data in json format"
+      operationId: "covid_19_json_request"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Authentication info."
